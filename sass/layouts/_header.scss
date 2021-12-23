@@ -1,0 +1,17 @@
+.header {
+  padding: 41px 0;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  fill: getColor("first-logo-color");
+}
+
+.header__menu-icon {
+  margin-left: auto;
+  fill: getColor("first-icon-color");
+}

@@ -1,0 +1,8 @@
+$colors: (
+  "firs-logo-color": #ffffff,
+  "first-icon-color": #ffffff,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
