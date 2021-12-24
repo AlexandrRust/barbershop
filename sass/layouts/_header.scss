@@ -1,17 +1,27 @@
 .header {
-  padding: 41px 0;
+  width: 100%;
+  padding-top: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header-wrap {
-  display: flex;
-  align-items: center;
+  @include flex-align();
 }
 
 .header__logo {
   fill: getColor("first-logo-color");
 }
 
-.header__menu-icon {
+.open-menu {
+  display: block;
+  border: none;
+  background-color: transparent;
   margin-left: auto;
+  cursor: pointer;
+}
+
+.header__menu-icon {
   fill: getColor("first-icon-color");
 }

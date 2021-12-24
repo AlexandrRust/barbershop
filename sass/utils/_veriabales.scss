@@ -1,8 +1,23 @@
 $colors: (
-  "firs-logo-color": #ffffff,
+  "first-logo-color": #ffffff,
   "first-icon-color": #ffffff,
+  "first-pretitle-color": #303030,
+  "second-pretitle-color": rgba(157, 164, 189, 0.6),
+  "first-title-color": #ffffff,
+  "second-title-color": #303030,
+  "first-aftertitle-color": #9da4bd,
+  "second-aftertitle-color": #555555,
+  "first-link-color": #303030,
+  "first-text-color": #555555,
+  "second-text-color": #303030,
+  "third-text-color": #9da4bd,
+  "accent-text-color": #ffffff,
+  "accent-color": #ff6c00,
 );
 
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

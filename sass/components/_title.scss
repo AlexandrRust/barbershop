@@ -1,0 +1,6 @@
+.title {
+  font-family: Raleway;
+  font-weight: 700;
+  @include font(42px, 49px, 0.05em);
+  color: getColor("second-title-color");
+}

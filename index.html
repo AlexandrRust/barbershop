@@ -11,18 +11,126 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
+                    <!-- HEADER -->
+
 <header class="header">
     <div class="container header-wrap">
-        <svg class="header__logo" width="69" height="56">
-            <use href="./img/icon.svg#icon-logo"></use>
-        </svg>
-        <svg class="header__menu-icon" width="40" height="40">
-            <use href="img/icon.svg#icon-menu"></use>
-        </svg>
-
+        <a href="" class="logo-link">
+            <svg class="header__logo" width="69" height="56">
+                <use href="./img/icon.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <button type="button" class="open-menu">
+            <svg class="header__menu-icon" width="40" height="40">
+                <use href="img/icon.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="backdrop is-hidden">
+            <div class="mob-menu">
+                <button type="button" class="close-menu">
+                    <svg class="close-menu__icon" width="40" height="40">
+                        <use href="./img/icon.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link">О нас</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link">Услуги и цены</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link">Мастера</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link">Контакты</a>
+                    </li>
+                </ul>
+                <a href="tel:+380441111111" class="mob-menu-tel">+38 044 111 11 11</a>
+                <button type="button" class="mob-menu-btn btn">онлайн-запись</button>
+                <ul class="mob-menu-social">
+                    <li class="mob-menu-social-item">
+                        <a href="" class="mob-menu-social-link mob-menu-social-link--first">Instagram</a>
+                    </li>
+                    <li class="mob-menu-social-item">
+                        <a href="" class="mob-menu-social-link">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
+<main>
+
+                    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container">
+            <h3 class="hero__pretitle pretitle" lang="en">A hair salon for men in Kyiv</h3>
+            <h1 class="hero__title title" lang="en">BarberShop</h1>
+            <p class="hero__aftertitle aftertitle">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+        </div>
+    </section>
+    <section class="aboutus">
+        <div class="container section">
+            <h3 class="aboutus__pretitle pretitle">О нас</h3>
+            <h2 class="aboutus__title">Лучший Барбершоп
+            твоего города</h2>
+            <p class="aboutus__aftertitle aftertitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+            <p class="aboutus-text">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь
+            в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
+            Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+            <button type="button" class="btn">онлайн-запись</button>
+        </div>
+    </section>
+
+    <!-- PRICES -->
+
+    <section class="prices section">
+        <div class="container">
+            <h3 class="prices__pretitle pretitle">Проведи время в компании лучших мастеров</h3>
+            <h2 class="prices__title title">Услуги и цены</h2>
+            <ul class="prices-list">
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Мужская стрижка</p>
+                    <span class="prices-span">от 300 грн.</span>
+                </li>
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Стрижка бороды</p>
+                    <span class="prices-span">от 200 грн.</span>
+                </li>
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Стрижка усов</p>
+                    <span class="prices-span">от 200 грн.</span>
+                </li>
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Бритье опасной бритвой</p>
+                    <span class="prices-span">от 200 грн.</span>
+                </li>
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Cтрижка у стажера</p> 
+                    <span class="prices-span">от 50 грн.</span>
+                </li>
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Стрижка под насадку</p>
+                    <span class="prices-span">от 200 грн.</span>
+                </li>
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Детская стрижка (до 12 лет)</p>
+                    <span class="prices-span">от 300 грн.</span>
+                </li>
+                <li class="prices-item">
+                    <p class="prices-text prices-item-description">Камуфлирование седины</p>
+                    <span class="prices-span">от 200 грн.</span>
+                </li>
+            </ul>
+            <button type="button" class="prices-btn btn">онлайн-запись</button>
+        </div>
+        
+    </section>
+</main>
 <body>
-    
+    <script src="./js/mob-menu.js"></script>
 </body>
 </html>

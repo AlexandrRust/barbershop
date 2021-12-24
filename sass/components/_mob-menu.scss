@@ -1,0 +1,86 @@
+.mob-menu {
+  width: 70%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 48px 31px 48px 40px;
+}
+
+.close-menu {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-menu__icon:hover {
+  fill: getColor("current-color");
+}
+
+.mob-menu-list {
+  margin-bottom: 64px;
+}
+
+.mob-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.mob-menu-link {
+  font-weight: 600;
+  @include font(18px, 25px, 0.1em);
+  color: getColor("first-link-color");
+  &:hover,
+  &:focus {
+    color: getColor("accent-color");
+  }
+}
+
+.mob-menu-tel {
+  font-weight: 600;
+  @include font(18px, 25px, 0.1em);
+  color: getColor("first-link-color");
+  &:hover,
+  &:focus {
+    color: getColor("accent-color");
+  }
+}
+
+.mob-menu-btn {
+  margin-top: 24px;
+}
+
+.mob-menu-social {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-menu-social-item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
+    background-color: #303030;
+  }
+  &:last-child::before {
+    opacity: 0;
+  }
+}
+
+.mob-menu-social-link {
+  font-weight: 600;
+  @include font(14px, 19px, 0.2em);
+  color: getColor("first-link-color");
+}

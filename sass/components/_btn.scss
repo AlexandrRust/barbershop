@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  min-width: 194px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  font-weight: 600;
+  @include font(12px, 16px, 0.09em);
+  color: getColor("second-text-color");
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+  &:hover {
+    background-color: getColor("accent-color");
+    color: getColor("accent-text-color");
+  }
+}

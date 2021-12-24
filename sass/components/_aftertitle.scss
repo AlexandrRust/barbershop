@@ -1,0 +1,4 @@
+.aftertitle {
+  @include font(16px, 26px, 0.02em);
+  color: getColor("first-aftertitle-color");
+}

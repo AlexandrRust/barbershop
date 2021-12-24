@@ -1,6 +1,18 @@
 @import "./utils/normalize";
 @import "./utils/base";
 @import "./utils/veriabales";
+@import "./utils/mixins";
 
 @import "./components/container";
+@import "./components/section";
+@import "./components/backdrop";
+@import "./components/mob-menu";
+@import "./components/btn";
+@import "./components/pretitle";
+@import "./components/title";
+@import "./components/aftertitle";
+
 @import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/aboutus";
+@import "./layouts/prices";

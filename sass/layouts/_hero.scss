@@ -1,0 +1,27 @@
+.hero {
+  width: 100%;
+  padding-top: 208px;
+  padding-bottom: 183px;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/hero/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__pretitle {
+    color: getColor("second-pretitle-color");
+  }
+  &__pretitle::before {
+    background-color: getColor("second-pretitle-color");
+  }
+  &__title {
+    color: getColor("first-title-color");
+    @include font(48px, 56px, 0.05em);
+    margin-bottom: 20px;
+  }
+
+  &__aftertitle {
+    max-width: 306px;
+  }
+}

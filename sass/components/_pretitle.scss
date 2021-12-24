@@ -1,0 +1,15 @@
+.pretitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  @include font(11px, 15px, 0.1em);
+  text-transform: uppercase;
+  color: getColor("first-pretitle-color");
+  @include flex-align();
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: getColor("first-pretitle-color");
+  }
+}
